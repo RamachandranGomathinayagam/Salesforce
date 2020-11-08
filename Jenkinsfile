@@ -14,7 +14,7 @@ pipeline {
             echo 'QA Build is ready'
             git(url: 'https://github.com/RamachandranGomathinayagam/Salesforce', branch: 'master')
             bat 'cd C:\\Users\\Ram\\.jenkins\\workspace\\Salesforce_master\\Salesforce'
-            bat 'mvn test'
+            bat 'cd C:\\Users\\Ram\\.jenkins\\workspace\\Salesforce_master\\Salesforce mvn test'
           }
         }
 

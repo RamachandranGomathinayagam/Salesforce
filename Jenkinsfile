@@ -13,8 +13,7 @@ pipeline {
           steps {
             echo 'QA Build is ready'
             git(url: 'https://github.com/RamachandranGomathinayagam/Salesforce', branch: 'master')
-            bat 'cd C:\\Users\\Ram\\.jenkins\\workspace\\Salesforce_master\\Salesforce'
-            bat 'cd C:\\Users\\Ram\\.jenkins\\workspace\\Salesforce_master\\Salesforce mvn test'
+            bat 'mvn -f Salesforce/pom.xml test'
           }
         }
 

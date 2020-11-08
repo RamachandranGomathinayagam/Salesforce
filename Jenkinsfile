@@ -13,7 +13,7 @@ pipeline {
           steps {
             echo 'QA Build is ready'
             git(url: 'https://github.com/RamachandranGomathinayagam/Salesforce', branch: 'master')
-            bat 'mvn test'
+            bat 'mvn install'
           }
         }
 
